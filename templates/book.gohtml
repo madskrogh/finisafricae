@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="finis Africae">
+        <title>finis Africae - Book</title>
+    </head>
+    <body>
+        <h1>{{.Title}}</h1> 
+        <button>Update</button>
+        <form action="/deletebook">
+            <input type="submit" value="Burn book" >
+        </form>
+        <button>Burn</button>
+        <h2>{{.Author.Fname}} {{.Author.Lname}}</h2>
+        <h2>{{.Year}}</h2>
+        <br>
+        <h2>Tags</h2>
+        <p>{{.Tags}}</p>
+        <h2>Notes</h2>
+        <p>{{.Notes}}</p>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="finis Africae">
+        <title>finis Africae - Update book</title>
+    </head>
+    <body>
+        <h1><a hre><em>finis Africae</em></h1>
+        <h3>New book</h3> 
+        {{.}}
+        <form action="/home">
+            <input type="submit" value="Home">
+        </form>
+
+    
+        <form action="/savebook" method="POST">    
+            <h4>Title</h4>        
+            <input type="text" name="title" placeholder="Title" autofocus autocomplete="off">           
+            <h4>Author</h4>
+            <input type="text" name="author" placeholder="Name" autofocus autocomplete="off">
+            <h4>Year</h4>
+            <input type="text" name="year" placeholder="Year" autofocus autocomplete="off">
+            <h4>Genre</h4>
+            <input type="text" name="genre" placeholder="Genre" autofocus autocomplete="off">
+            <h4>Notes</h4>
+            <textarea name="notes" autofocus autocomplete="off" cols="40" rows="5"></textarea>
+             <br> <br>
+            <input type="submit" value="Save book">
+        </form>
+    </body>
+</html>

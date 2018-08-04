@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="finis Africae">
+        <title>finis Africae - User</title>
+    </head>
+    <body>
+        <h2>Update user information</h2>
+        {{.}}
+        <form action="/home">
+            <input type="submit" value="Home">
+        </form>
+         <h3>Change email</h3>
+        <form action="/updateemail" method="POST">
+            <input type="text" name="email" placeholder="New email" autofocus autocomplete="off">
+            <input type="text" name="password" placeholder="Current password" autofocus autocomplete="off"> <br> <br>
+            <input type="submit" name="applychanges-btn" value="Update email">
+        </form>
+        <h3>Change password</h3>
+        <form action="/updatepassword" method="POST">
+            <input type="text" name="npassword" placeholder="New password" autofocus autocomplete="off">
+            <input type="text" name="npassword2" placeholder="Repeat new password" autofocus autocomplete="off">
+            <input type="text" name="password" placeholder="Current password" autofocus autocomplete="off"> <br> <br>
+            <input type="submit" name="applychanges-btn" value="Update password">
+        </form>
+    </body>
+</html>

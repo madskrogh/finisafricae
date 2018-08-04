@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="finis Africae">
+        <title>finis Africae - Logged in</title>
+    </head>
+    <body>
+        <h1>Welcome to <a hre><em>finis Africae</em></h1>
+        <form action="/logout">
+            <input type="submit" value="Logout">
+        </form>
+        <br>
+        <form action="/user">
+            <input type="submit" value="User">
+        </form>
+        <br>
+        <h4>Library</h4>
+        <form action="/newbook">
+            <input type="submit" value="New book">
+        </form>
+        <br>
+        <button>Share library</button>
+        <p>Below you will find the current contents of your <i><b>finis Africae</b></i></p>
+        <ul>
+            {{range .}}
+            <li>
+            {{.Title}} <br>
+            {{.Author}} <br>
+            {{.Year}} <br>
+            {{.Notes}} <br>
+            <br> <br>
+            </li>
+            {{end}}
+        </ul>
+    </body>
+</html>
